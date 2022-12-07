@@ -1,10 +1,10 @@
-var pessoa = {
-  nome: "Carlos",
-  idade: 21,
-  altura: 1.8,
-};
+// var pessoa = {
+//   nome: "Carlos",
+//   idade: 21,
+//   altura: 1.8,
+// };
 
-console.log(pessoa.idade);
+// console.log(pessoa.idade);
 
 var quadrado = {
   lados: 4,
@@ -82,3 +82,47 @@ var cachorro = {
     }
   },
 };
+
+var aluno = "Kaio";
+var nota1 = 2;
+var nota2 = 2;
+var nota3 = 2;
+
+var media = (nota1 + nota2 + nota3) / 3;
+
+if (media >= 7) {
+  console.log("O aluno: " + aluno + " foi aprovado com a média de: " + media);
+} else {
+  console.log("O aluno: " + aluno + " foi reprovado com a média de: " + media);
+}
+
+// const pessoa = {
+//   nome: "Kaio",
+//   idade: 27,
+//   altura: 1.6,
+//   peso: "55kg",
+// };
+
+// const pessoa2 = {
+//   nome: "Carlos",
+//   idade: 25,
+//   altura: 2.14,
+//   peso: "200kg",
+// };
+
+function pessoaFactory(nome, idade, altura, peso) {
+  var pessoa = {};
+
+  pessoa.nome = nome;
+  pessoa.idade = idade;
+  pessoa.altura = altura;
+  pessoa.peso = peso;
+
+  return pessoa;
+}
+
+var pessoa1 = pessoaFactory("Kaio", 27, "1.60", "35kg");
+var pessoa2 = pessoaFactory("Carlos", 23, "1.80", "105kg");
+
+console.log(pessoa1);
+console.log(pessoa2);
