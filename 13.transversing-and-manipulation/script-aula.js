@@ -9,7 +9,7 @@ copy.appendChild(menuClone);
 // Selecione o primeiro DT da dl de Faq
 
 const faq = document.querySelector(".faq");
-const firstDT = faq.querySelector('dt);
+const firstDT = faq.querySelector("dt");
 
 // Selecione o DD referente ao primeiro DT
 
